@@ -17,18 +17,9 @@ define(['jquery'], function ($) {
          */
         init: function() {
             this.isEnabled = false;
-            this.setupHandlers()
-                .createChildren()
+            this.createChildren()
                 .layout()
                 .enable();
-        },
-
-        /**
-         * Binds the scope of any handler functions
-         * Should only be run on initialization of the view
-         */
-        setupHandlers: function() {
-            return this;
         },
 
         /**
