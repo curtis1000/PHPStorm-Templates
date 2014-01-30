@@ -36,7 +36,6 @@ define(['jquery'], function ($) {
          * Should only be run on initialization of the view
          */
         createChildren: function() {
-            this.model = APP.${ModelModuleName};
             return this;
         },
 
